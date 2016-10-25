@@ -1,4 +1,6 @@
 <?php
+header('Content-type: text/css');
+
 $bgcolor = 'white';
 $headercolor = '#000000';
 $headerheight = '40px'; //(normi = 40px, pieni 20px ja iso 80px ja medium 60px)
