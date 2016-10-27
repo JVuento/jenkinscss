@@ -11,13 +11,18 @@ $textpictext = 'Jenkins';
 $font = 'Helvetica, Arial, sans-serif'; //Helvetica, Arial, sans-serif
 $fontcolor = '#333';
 $fontsize = '13px';
-
+$crumbarcolor = '#f6faf2';
+$nameicon="position: absolute; bottom: 3px; left: 32px;";
+$headicon="position: absolute; bottom: 0px;";
+$linkwidth="180px";
 foreach($_GET as $key=>$value){
 	if (!empty($value)){
 		$$key = $value;
 	}
 	if(!empty($_GET["picaddress"])){
 		$picaddress="../userContent/layout/" . $_GET["picaddress"] . ".png";
+		$nameicon="position: absolute; bottom: 3px; left: 32px; display: none;";
+		$headicon="display: block; -moz-box-sizing: border-box; box-sizing: border-box; width: " . $linkwidth . "; height: " . $headerheight . "; padding-left: 180px; background-image: url(" . $picaddress . "); background-repeat: no-repeat;";
 	}
 }
 ?>
@@ -53,13 +58,11 @@ body {
 }
 
 #jenkins-head-icon {
-  position: absolute;
-  bottom: 0px;
+  <?php echo($headicon);?>;
 }
 #jenkins-name-icon {
-  position: absolute;
-  bottom: 3px;
-  left: 32px;
+  position: absolute; bottom: 3px; left: 32px;
+  <?php echo($nameicon);?>;
 }
 
 #header .searchbox, #header .login {
@@ -68,7 +71,7 @@ body {
 }
 
 #breadcrumbBar, #footer-container, .top-sticker-inner {
-  background-color: #f6faf2;
+  background-color: <?php echo($crumbarcolor);?>;
 }
 
 #side-panel {

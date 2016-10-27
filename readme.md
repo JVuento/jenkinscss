@@ -15,6 +15,8 @@ There is different ways of using this. Basicly you call this php with address co
 	font(Helvetica, Arial, sans-serif)
 	fontcolor(#333)
 	fontsize(13px)
+	crumbarcolor(#f6faf2)
+	linkwidth(180px)
 	
 ### Version numbers available at the moment:
 	2_19_1 
