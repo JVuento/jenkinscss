@@ -1,4 +1,6 @@
 <?php
+header('Content-type: text/css');
+
 $bgcolor = 'white';
 $headercolor = '#000000';
 $headerheight = '40px'; //(normi = 40px, pieni 20px ja iso 80px ja medium 60px)
@@ -33,8 +35,8 @@ body {
 }
 
 #header {
-  background-color: <?php echo $headercolor;?>;
-  height: <?php echo $headerheight;?>;
+  background-color: <?php echo($headercolor);?>;
+  height: <?php echo($headerheight);?>;
 }
 
 #header div {
@@ -136,13 +138,13 @@ body {
 
 body, table, form, input, td, th, p, textarea, select
 {
-  font-family: <?php echo $font;?>;
-  font-size: <?php echo $fontsize;?>;
+  font-family: <?php echo ($font);?>;
+  font-size: <?php echo ($fontsize);?>;
 }
 
 body, table, form, td, th, p
 {
-  color: <?php echo $fontcolor;?>;
+  color: <?php echo ($fontcolor);?>;
 }
 
 FORM {
@@ -185,7 +187,7 @@ dt {
 #top-panel {
   margin-bottom: 3pt;
   height: 34px;
-  background: url(<?php echo $picaddress;?>) repeat-x;
+  background: url(<?php echo ($picaddress);?>) repeat-x;
 }
 #top-panel a {
   text-decoration: none;
