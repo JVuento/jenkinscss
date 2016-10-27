@@ -2,8 +2,8 @@
 header('Content-type: text/css');
 
 $bgcolor = 'white';
-$headercolor = '#000000';
-$headerheight = '40px'; //(normi = 40px, pieni 20px ja iso 80px ja medium 60px)
+$headercolor = '#555555';
+$headerheight = '80px'; //(normi = 40px, pieni 20px ja iso 80px ja medium 60px)
 $picaddress = '../images/topbar.png'; //(oli: ../images/topbar.png, defaultiksi ../userContent/layout/logo.png)
 $textpic = 1;           // onko Jenkins tekstillä(0) vai kuvana(1)
 $textpicaddress = '../userContent/layout/text.png';
@@ -61,7 +61,6 @@ body {
   <?php echo($headicon);?>;
 }
 #jenkins-name-icon {
-  position: absolute; bottom: 3px; left: 32px;
   <?php echo($nameicon);?>;
 }
 
