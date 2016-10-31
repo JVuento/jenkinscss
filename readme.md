@@ -31,8 +31,8 @@ There is different ways of using this. Basicly you call this php with address co
 
 ### More
 
-You can of course host this php-file in your own php-server and call it. Remember that you must then host pictures in your php-server.
-You can download the created .css-file and overwrite existing Jenkins css with it (not recommended).
+- You can of course host this php-file in your own php-server and call it. Remember that you must then host pictures in your php-server.
+- You can download the created .css-file and overwrite existing Jenkins css with it (not recommended).
 ...
 
 ## Examples
