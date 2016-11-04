@@ -1,6 +1,5 @@
 <?php
 header('Content-type: text/css');
-
 $bgcolor = 'white';
 $headercolor = '#555555';
 $headerheight = '80px'; //(normi = 40px, pieni 20px ja iso 80px ja medium 60px)
@@ -47,10 +46,12 @@ body {
   <?php echo($nameicon);?>;
 }
 
+
 #breadcrumbBar, #footer-container, .top-sticker-inner {
   background-color: <?php echo($crumbarcolor);?>;
 }
 
+/* Fonts etc */
 
 body, table, form, input, td, th, p, textarea, select
 {
@@ -69,3 +70,4 @@ body, table, form, td, th, p
   height: 34px;
   background: url(<?php echo ($picaddress);?>) repeat-x;
 }
+

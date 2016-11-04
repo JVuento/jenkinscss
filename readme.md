@@ -3,6 +3,9 @@ Helps you to keep Jenkins instances look different easily. Change color and logo
 Basicly did this to help myself keeping track of my Jenkins instances by colouring them differently. 
 Feel free to use, fork, pull request etc. Hope it helps somebody.
 
+Update: VERSIONrip.php includes only altered tags. Usage: http://www.gnomelab.com/jenkinscss/2_19_1rip.php?fontsize=30px
+
+
 ## How to use it
 There is different ways of using this. Basicly you call this php with address combined with version number and parameters you want to alter an then use it in one of following ways.
 	Example: 2_19_1.php?bgcolor=green&headerheight=60px
